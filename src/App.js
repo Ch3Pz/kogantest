@@ -66,19 +66,19 @@ const App = () => {
             <tbody>
               <tr>
                 <th>Title</th>
-                <th>Length (cm)</th>
-                <th>Height (cm)</th>
-                <th>Width (cm)</th>
-                <th>Weight (g)</th>
-                <th>Cubic Weigth (kg)</th>
+                <th>Length (m)</th>
+                <th>Height (m)</th>
+                <th>Width (m)</th>
+                <th>Weight (kg)</th>
+                <th>Cubic Weight (kg)</th>
               </tr>
             {airCons.map((aircon,idx) => (
               <tr key={idx}>
                 <td>{aircon.title}</td>
-                <td>{aircon.size.length}</td>
-                <td>{aircon.size.height}</td>
-                <td>{aircon.size.width}</td>
-                <td>{aircon.weight}</td>
+                <td>{aircon.size.length / 100}</td>
+                <td>{aircon.size.height / 100}</td>
+                <td>{aircon.size.width / 100}</td>
+                <td>{aircon.weight / 1000}</td>
                 <td>{aircon.cubicWeight}</td>
               </tr>
             ))}

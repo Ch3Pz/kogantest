@@ -28382,10 +28382,10 @@ var App = function App() {
       }
     });
   }, [fetchUrl]);
-  return /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, isFetching && /*#__PURE__*/_react.default.createElement("div", null, "LOADING..."), !isFetching && /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "Kogan Coding Challenge 1 - Yoseph Andreas"), /*#__PURE__*/_react.default.createElement("div", null, "Total Number of Air Conditioners: ", airCons.length), /*#__PURE__*/_react.default.createElement("table", null, /*#__PURE__*/_react.default.createElement("tbody", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("th", null, "Title"), /*#__PURE__*/_react.default.createElement("th", null, "Length (cm)"), /*#__PURE__*/_react.default.createElement("th", null, "Height (cm)"), /*#__PURE__*/_react.default.createElement("th", null, "Width (cm)"), /*#__PURE__*/_react.default.createElement("th", null, "Weight (g)"), /*#__PURE__*/_react.default.createElement("th", null, "Cubic Weigth (kg)")), airCons.map(function (aircon, idx) {
+  return /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, isFetching && /*#__PURE__*/_react.default.createElement("div", null, "LOADING..."), !isFetching && /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "Kogan Coding Challenge 1 - Yoseph Andreas"), /*#__PURE__*/_react.default.createElement("div", null, "Total Number of Air Conditioners: ", airCons.length), /*#__PURE__*/_react.default.createElement("table", null, /*#__PURE__*/_react.default.createElement("tbody", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("th", null, "Title"), /*#__PURE__*/_react.default.createElement("th", null, "Length (m)"), /*#__PURE__*/_react.default.createElement("th", null, "Height (m)"), /*#__PURE__*/_react.default.createElement("th", null, "Width (m)"), /*#__PURE__*/_react.default.createElement("th", null, "Weight (kg)"), /*#__PURE__*/_react.default.createElement("th", null, "Cubic Weight (kg)")), airCons.map(function (aircon, idx) {
     return /*#__PURE__*/_react.default.createElement("tr", {
       key: idx
-    }, /*#__PURE__*/_react.default.createElement("td", null, aircon.title), /*#__PURE__*/_react.default.createElement("td", null, aircon.size.length), /*#__PURE__*/_react.default.createElement("td", null, aircon.size.height), /*#__PURE__*/_react.default.createElement("td", null, aircon.size.width), /*#__PURE__*/_react.default.createElement("td", null, aircon.weight), /*#__PURE__*/_react.default.createElement("td", null, aircon.cubicWeight));
+    }, /*#__PURE__*/_react.default.createElement("td", null, aircon.title), /*#__PURE__*/_react.default.createElement("td", null, aircon.size.length / 100), /*#__PURE__*/_react.default.createElement("td", null, aircon.size.height / 100), /*#__PURE__*/_react.default.createElement("td", null, aircon.size.width / 100), /*#__PURE__*/_react.default.createElement("td", null, aircon.weight / 1000), /*#__PURE__*/_react.default.createElement("td", null, aircon.cubicWeight));
   }))), /*#__PURE__*/_react.default.createElement("h3", {
     colSpan: "5"
   }, "Averate Cubic Weight: ", average, "kg")));
@@ -28420,7 +28420,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55482" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56867" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
