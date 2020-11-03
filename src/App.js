@@ -47,7 +47,6 @@ const App = () => {
           }else{
             setIsFetching(false);
             setAverage( calcAverageCubicWeight(airCons) );
-
           }
         })
 
@@ -61,6 +60,7 @@ const App = () => {
       }
       { !isFetching && 
         <>
+        <h1>Kogan Coding Challenge 1 - Yoseph Andreas</h1>
         <div>Total Number of Air Conditioners: {airCons.length}</div>
           <table>
             <tbody>
